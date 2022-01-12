@@ -9,9 +9,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        dim1: [0,1,2,3,4,5]
-        dim2: [0,1,2,3,4,5]
-        dim3: [0,1,2,3,4,5]
+        dim1: [0,1,2,3]
+        dim2: [0,1,2,3]
+        dim3: [0,1,2,3]
+        dim4: [0,1,2,3]
 
     steps:
       - uses: actions/checkout@v2
@@ -29,4 +30,4 @@ jobs:
 
       - name: Run job
         run: |
-          python run.py ${{ matrix.dim1 }} ${{ matrix.dim2 }} ${{ matrix.dim3 }}
+          python run.py ${{ matrix.dim1 }} ${{ matrix.dim2 }} ${{ matrix.dim3 }} ${{ matrix.dim4 }}
