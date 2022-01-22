@@ -25,5 +25,6 @@ if __name__ == '__main__':
     print(f"job_id: {idx}")
     print(f"ts_code: {ts_code}")
 
-    df = get_data.get_stock_info(ts_code)
+    ts_api = get_data.create_tushare_api()
+    df = get_data.get_stock_info(ts_api,ts_code)
     print(df)
