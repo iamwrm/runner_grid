@@ -9,9 +9,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        dim1: [0]
-        dim2: [0]
-        dim3: [0]
+        dim1: [0,1,2,3]
+        dim2: [0,1,2,3]
+        dim3: [0,1,2,3]
         dim4: [0,1,2,3]
 
     steps:
